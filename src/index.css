@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --primary: #6C5CE7;
+    --primary-dark: #4834D4;
+    --secondary: #FD79A8;
+    --success: #00B894;
+    --bg-neutral: #F8F9FA;
+    --surface-card: #FFFFFF;
+    --text-primary: #2D3436;
+    --text-secondary: #636E72;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F9FA;
+    color: #2D3436;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Fresh & Welcoming Shadows & Elevation */
+.fresh-card-shadow {
+  box-shadow: 0 8px 30px rgba(108, 92, 231, 0.08);
+}
+
+.fresh-card-shadow-lg {
+  box-shadow: 0 14px 40px rgba(108, 92, 231, 0.12);
+}
+
+.fresh-like-shadow {
+  box-shadow: 0 8px 24px rgba(253, 121, 168, 0.35);
+}
+
+.fresh-primary-shadow {
+  box-shadow: 0 8px 24px rgba(108, 92, 231, 0.3);
+}
+
+.fresh-match-shadow {
+  box-shadow: 0 10px 30px rgba(0, 184, 148, 0.3);
+}
+
+/* Fresh Clean Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F2F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6C5CE7;
+}
+
+/* Mobile safe areas */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
